@@ -1,0 +1,52 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(100, 1fr);
+    grid-auto-rows: 1fr;
+}
+
+.cell {
+    border: 1px solid #ddd;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(240, 240, 240);
+    color: #fff;
+    text-align: center;
+    border: 1px solid #aeaeae;
+    border-radius: 6px;
+    padding: 8px 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.picker {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #aeaeae;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.selected {
+    border: 1px solid black;
+    opacity: 100%;
+}
